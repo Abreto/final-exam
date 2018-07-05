@@ -22,7 +22,7 @@
 ![14种布拉菲格子](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/14blf.jpg)
 
 ## 第二章 晶体的结合
-![晶体结合的基本类型和特点](combine.JPG)
+![晶体结合的基本类型和特点](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/combine.JPG)
 
 ## 第三章 晶格振动
 
