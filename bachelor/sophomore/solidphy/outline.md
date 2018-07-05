@@ -120,3 +120,39 @@ $$v_g = \frac{\mathrm{d}\omega}{\mathrm{d}q}$$
 在无色散的媒质中，波速 $v_0$、相速 $v_p$、群速 $v_g$ 三者相同。
 
 #### 色散关系
+
+> 色散本来是指光在某一媒质中传播的速度与频率有关的现象。
+
+若 $\omega \sim q$ 间为线性关系，则相速为常数，
+即各种频率的波在该媒质中传播时不发生色散。
+在晶格振动的理论中，把 $\omega \sim q$ 之间的关系称为色散关系。
+
+$$\omega = \omega_m\left|\sin{{qa} \over {2}}\right|$$
+其中 $\omega_m=(4\beta/m)^{1/2}$。
+式中不出现变量 $n$，
+描述的格波是满足运动方程的所有原子都参与的一种集体运动模式。
+一维单原子链的色散关系：
+![一维单原子链的色散关系](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/ywdyzldssgx.jpg)
+
+$$
+\omega_m = \left(\frac{4\beta}{m}\right)^{1\over{}2}
+\qquad
+\text{当}\ q = \pm\frac{\pi}{2}\ \text{时}
+$$
+高于该频率的格波不能在晶格中传播，称为截止频率。
+可以将一维单原子晶格看成低通滤波器。
+
+$$v_p = v_0\frac{|\sin{qa/2}|}{qa/2}$$
+$v_p$ 是 $q$ 的函数，有色散。
+
+格波频率是波矢的周期函数，
+周期为 $2\pi/a$（一维原子链的最短倒格矢），倒格子周期性，
+倒格子平移对称性：
+$$ \omega(q) = \omega(q+G_h) $$
+
+倒格子反演对称性：
+$$\omega(q) = \omega(-q)$$
+
+以上两个对三维晶格适用。✔
+
+若 $q$ 为正，表示沿某方向前进的格波，$q$ 为负则表示沿反方向传播的格波。
