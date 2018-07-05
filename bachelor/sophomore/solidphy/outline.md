@@ -34,4 +34,41 @@
 
 ### 一维单原子晶格的振动
 
+第 $n$ 个原子的运动方程为
+$$
+m\frac{\mathrm{d}^2(na+U_n)}{\mathrm{d}t^2}
+=
+m{{\mathrm{d}^2U_n} \over {\mathrm{d}t^2}}
+=
+f_{n-1} + f_{n+1}
+=
+\beta(U_{n+1}+U_{n-1}-2U_n)
+$$
+$n$ 总共可取 $N$ 个值，该式实为 $N$ 个方程组成的方程组，
+可用 $N$ 个解，晶体的总自由度为 $N$。
+
+当 $a$ 非常小时，一维原子链可看做一个连续长杆，
+$$
+\left\{
+    \begin{array}{c}
+        na \to x \\
+        a \to \Delta{}x
+    \end{array}
+\right. \\
+U_n(t) = U(na,t) \to U(x,t)
+$$
+
+上式可化简为
+
+$$
+\frac{\mathrm{d}^2U(x,t)}{\mathrm{d}t^2}
+=
+\upsilon_0^2\frac{\mathrm{d}^2U(x,t)}{\mathrm{d}x^2}
+$$
+
+试探解：
+$$
+U_n(t) = A\mathrm{e}^{i(qna-\omega{}t)}
+$$
+
 
