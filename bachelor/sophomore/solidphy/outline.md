@@ -196,3 +196,18 @@ U_n(t) = \sum_q^N{A_q\mathrm{e}^{i(qna-\omega{}t)}}
 $$
 
 ### 一维双原子链的晶格振动
+#### 模型与色散关系
+有两支 $\omega \sim q$ 关系。
+
+当取“$-$”号时，$\omega$ 记为 $\omega_A$，
+称为声学支（Acoustic branch）格波；
+取“$+$”号时，$\omega$ 记为 $\omega_O$，
+称为光学支（Optical branch）格波。
+
+![一维复式格子晶体中可以存在两种独立的格波](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/oanda.png)
+
+当 $q=0$ 时，$\omega_A = 0$，$\omega_O \ne 0$.
+
+#### 关于声学波与光学波的讨论
+
+
