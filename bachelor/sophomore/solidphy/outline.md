@@ -19,7 +19,7 @@
 |单斜晶系|$\boldsymbol{a}_1 \ne \boldsymbol{a}_2 \ne \boldsymbol{a}_3$ <br /> $\boldsymbol{a}_2 \perp \boldsymbol{a}_1, \boldsymbol{a}_3$|简单单斜<br />底心单斜|$C_2,C_s,C_{2h}$|
 
 #### 14种布拉菲格子
-![14种布拉菲格子](14blf.jpg)
+![14种布拉菲格子](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/14blf.jpg)
 
 ## 第二章 晶体的结合
 ![晶体结合的基本类型和特点](combine.JPG)
