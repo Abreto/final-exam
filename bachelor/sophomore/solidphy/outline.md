@@ -326,7 +326,7 @@ $$ \mathrm{e}^{i\boldsymbol{q}\cdot{}N_i\cdot{}\boldsymbol{a}_i} = 1 \qquad i = 
 由倒格子基矢的定义 $\boldsymbol{a}_i \cdot \boldsymbol{b}_j = 2\pi\delta_{ij}$，可知同时满足 $3$ 个式子的波矢为
 $$ \boldsymbol{q} = \frac{L_1}{N_1}\boldsymbol{b}_1 + \frac{L_2}{N_2}\boldsymbol{b}_2 + \frac{L_3}{N_3}\boldsymbol{b}_3 $$
 其中 $L_i \in \mathbb{Z}$；$\boldsymbol{b}_1, \boldsymbol{b}_2, \boldsymbol{b}_3$ 是倒格子基矢；$N_1, N_2, N_3$ 是基矢三个方向的初基原胞数。每组 $(L_1,L_2,L_3)$ 对应一个波矢。
-这些波矢在到空间逐点表示出来，在任一方向上市均匀分布的。
+这些波矢在到空间逐点表示出来，在任一方向上是均匀分布的。
 每个 $\boldsymbol{q}$ 点所占体积为
 $$
 \frac{\boldsymbol{b}_1}{N_1}\cdot
