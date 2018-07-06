@@ -276,7 +276,7 @@ $\boldsymbol{a}_1, \boldsymbol{a}_2, \boldsymbol{a}_3$
 晶体由 $N=N_1\cdot N_2\cdot N_3$ 个初基原胞组成，
 每个初基原胞内含 $S$ 个原子。
 
-#### 原子振动方向
+###### 原子振动方向
 
 一维：波矢 $q$ 和原子振动方向相同，只有纵波。
 
@@ -287,7 +287,7 @@ $3$ 个分量。
 一种**纵波**（L）
 和与波矢垂直的两种**横波**（T）。
 
-#### 格波支数
+##### 格波支数
 > 每只格波都描述了晶格中原子振动的一类运动形式。
 > 初级原胞有多少个自由度，
 > 晶格原子振动就有多少种可能的运动形式，
@@ -309,9 +309,39 @@ $S-1$ 支光学波（假设确定了某个原子与其他$S-1$个原子的相对
 
 > 由于晶体晶格的对称性，两支 TA 重合，两支 TO 重合的现象称为简并。
 
-#### 格波数
+##### 格波数
 
 一维 $S$ 原子链存在 $S$ 支格波，一个 $q$ 对应 $S$ 个格波，$q$ 的取值数为初基原胞数 $N$，晶体中总共有 $NS$ 个格波，运动方程组共有 $NS$ 个方程，可有 $NS$ 个解，晶体的总自由度数 $NS$.
 
 三维晶格中 $3S$ 支格波，一个 $\boldsymbol{q}$ 对应 $3S$ 个 $\omega$ 值，对应 $3S$ 个格波。$\boldsymbol{q}$ 取值数仍为初基原胞数 $N$，共有 $3NS$ 个 $(\omega_i,\boldsymbol{q})$ 数组，晶体中有 $3NS$ 个格波。
 > 晶体中格波数 = 晶格的总自由度数
+
+##### 波矢取值
+三维原子的位移：
+$$ U_{na_i} = A_i\mathrm{e}^{i(\boldsymbol{q}\cdot\boldsymbol{R}_{na_i}-\omega{}t)} \qquad i = 1,2,3 $$
+三维玻恩卡曼条件：
+$$ U_{na_i} = U_{(n+N_i)a_i} $$
+得
+$$ \mathrm{e}^{i\boldsymbol{q}\cdot{}N_i\cdot{}\boldsymbol{a}_i} = 1 \qquad i = 1,2,3 $$
+由倒格子基矢的定义 $\boldsymbol{a}_i \cdot \boldsymbol{b}_j = 2\pi\delta_{ij}$，可知同时满足 $3$ 个式子的波矢为
+$$ \boldsymbol{q} = \frac{L_1}{N_1}\boldsymbol{b}_1 + \frac{L_2}{N_2}\boldsymbol{b}_2 + \frac{L_3}{N_3}\boldsymbol{b}_3 $$
+其中 $L_i \in \mathbb{Z}$；$\boldsymbol{b}_1, \boldsymbol{b}_2, \boldsymbol{b}_3$ 是倒格子基矢；$N_1, N_2, N_3$ 是基矢三个方向的初基原胞数。每组 $(L_1,L_2,L_3)$ 对应一个波矢。
+这些波矢在到空间逐点表示出来，在任一方向上市均匀分布的。
+每个 $\boldsymbol{q}$ 点所占体积为
+$$
+\frac{\boldsymbol{b}_1}{N_1}\cdot
+\left(
+  \frac{\boldsymbol{b}_2}{N_2} \times \frac{\boldsymbol{b}_3}{N_3}
+\right)
+=
+\frac{\Omega^*}{N}
+=
+\frac{(2\pi)^3}{V}
+$$
+其中 $V = N\Omega$ 是晶体体积。$\boldsymbol{q}$ 的取值范围在第一布里渊区内，
+可取值数目为：
+$$ \frac{\Omega^*}{\Omega^*/N} = N $$
+密度为
+$$ \frac{N}{\Omega^*} = \frac{V}{(2\pi)^3} $$
+
+#### 格波态密度函数
