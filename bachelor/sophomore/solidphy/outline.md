@@ -555,4 +555,9 @@ T → 0时，比热 随温度的下降速度比实验数据 T3快，与实验曲
 1. $\Theta_D > \Theta_E$
 2. 德拜温度是经典概念和量子概念定性解释热容现象的分界线
 
+利用德拜模型求声子数，积分上限为 $k_BT/\hbar$（已被激发的声子的频率）
+
+$$ \mathrm{d}N' = f_{BE}(\omega) \cdot g(\omega) \cdot \mathrm{d}\omega $$
+$$ f_{BE}(\omega) = \bar{n}(\omega, T) $$
+
 ## 第四章 固态电子论基础
