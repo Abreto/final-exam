@@ -359,7 +359,7 @@ $$g(\omega) =
 \sum_{i=1}^{3S}
 {
   \frac{V}{(2\pi)^3}
-  \int_\omega{\frac{\mathrm{d}S_\omega}{\left|\nabla_q\omega_i(q)\right|}}
+  \int_{S_\omega}{\frac{\mathrm{d}S_\omega}{\left|\nabla_q\omega_i(q)\right|}}
 }
 $$
 
@@ -561,3 +561,183 @@ $$ \mathrm{d}N' = f_{BE}(\omega) \cdot g(\omega) \cdot \mathrm{d}\omega $$
 $$ f_{BE}(\omega) = \bar{n}(\omega, T) = \frac{1}{\displaystyle\exp{\left(\frac{\hbar\omega}{k_BT}\right)}-1} $$
 
 ## 第四章 固态电子论基础
+
+### 量子自由电子论
+电子是费米子，服从泡利不相容原理的全同粒子，服从费米—狄拉克统计。
+#### 自由电子的能级和能态密度
+
+假定 $N$ 个无相互作用的自由电子被限制在边长为 $L$，
+体积为 $V=L^3$ 的势阱中：
+$$ -\frac{\hbar^2}{2m}\nabla^2\psi(\boldsymbol{r}) = E\psi(\boldsymbol{r}) $$
+解得
+$$ \psi(\boldsymbol{r})
+=
+\sqrt{\frac{1}{V}}\mathrm{e}^{i\boldsymbol{k}\cdot\boldsymbol{r}}
+$$
+$\boldsymbol{k}$ 为电子波的波矢。能量
+$$ E(\boldsymbol{k}) = \frac{\hbar^2k^2}{2m}
+= \frac{\hbar^2}{2m}(k_x^2+k_y^2+k_z^2) \qquad \text{(能带结构)} $$
+周期性边界条件：
+$$
+\psi(0,y,z) = \psi(L,y,z) \\
+\psi(x,0,z) = \psi(x,L,z) \\
+\psi(x,y,0) = \psi(x,y,L) \\
+\Downarrow \text{} \\ \text{} \\
+e^{ik_xL} = e^{ik_yL} = e^{ik_zL} = 1
+$$
+于是
+$$ k_i = \frac{2\pi}{L}n_i \qquad n_i \in \mathbb{Z},\ i \in \{x,y,z\} $$
+$$ E = \frac{\hbar^2}{2m}\left(\frac{2\pi}{L}\right)^2(n_x^2+n_y^2+n_z^2) $$
+每个电子能级容纳两个自旋相反的电子。
+
+用一个波矢的 $k$ 值标志电子的一个空间运动状态 $\psi$，
+由波矢 $\boldsymbol{k}$ 所代表的自由电子可能的空间运动状态称为自由电子态，
+每一个电子态 $(k_x,k_y,k_z)$ 在波矢空间中用一个点表示。
+波矢 $\boldsymbol{k}$ 在空间的分布是均匀的：
+$$ \boldsymbol{k} = \sum_{i=1}^3 \frac{l_i}{N_i} \boldsymbol{b}_i
+\qquad l_i \in \mathbb{Z} $$
+沿轴方向相邻两个电子态距离为 $(2\pi)/L$，每个 $\boldsymbol{k}$ 点在 $\boldsymbol{k}$ 空间占有的“体积”为
+$$
+\frac{\boldsymbol{b}_1}{N_1}\cdot
+\left(
+  \frac{\boldsymbol{b}_2}{N_2} \times \frac{\boldsymbol{b}_3}{N_3}
+\right)
+=
+\frac{\Omega^*}{N}
+=
+\frac{(2\pi)^3}{V}
+$$
+$\boldsymbol{k}$ 点的密度为 $V/(2\pi)^3$、$S/(2\pi)^2$、$L/(2\pi)$.
+
+> 考虑自旋，空间电子态为 $\boldsymbol{k}$ 的**两倍**！！
+
+电子态密度（能态密度）：对给定体积的晶体，能级$E$附近单位能量间隔的电子状态数
+$$
+g(E) = \lim_{\Delta{E}\to{0}}\frac{\Delta{Z}}{\Delta{E}}
+= \frac{\mathrm{d}Z}{\mathrm{d}E}
+$$
+
+能态密度函数
+$$ g(E) = 2\cdot\frac{V_c}{(2\pi)^3}
+\int_{S_E}\frac{\mathrm{d}S_E}{|\nabla_kE|} $$
+
+$$
+\newcommand\d{\mathrm{d}}
+g(E)\d{E} = 2 \cdot
+\left\{
+  \begin{array}{c}
+  \displaystyle \frac{L_c}{2\pi}\cdot 2 \\ \\
+  \displaystyle \frac{S_c}{(2\pi)^2} \cdot 2\pi{k} \\ \\
+  \displaystyle \frac{V_c}{(2\pi)^3} \cdot 4\pi{k^2}
+  \end{array}
+\right\}\d{k}
+$$
+> $k^2\hbar^2 = 2mE$.
+
+#### 费米分布函数
+电子的自旋量子数为半整数，分布服从费米—狄拉克统计规律：
+$$
+f_{F-D}(E, T) = \frac{1}{\displaystyle\mathrm{e}^{(E-E_F)/k_BT}+1}
+$$
+> 反映了能量为 $E$ 的每一个可占据的量子态被电子所占据的平均概率
+
+
+$E_F$ 为全同粒子体系的化学势或费米能，是温度$T$和电子数$N$的函数：
+$$ N = \int_0^\infty{}f(E)g(E)\mathrm{d}E $$
+> 物理意义：在体积不变的条件下，系统增加一个粒子所需的自由能
+
+![](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/fege.png)
+![](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/fee.png)
+
+$$
+\mathrm{d}N = f(E,T)g(E)\mathrm{d}E \\ \text{} \\
+\mathrm{d}\bar{U} = E\cdot\mathrm{d}N
+$$
+
+##### $T \to 0\mathrm{K}$ 时
+$$
+f(E,0) = \left\{
+  \begin{array}{ll}
+  1 & \quad E \le E_F^0 \\ \\
+  0 & \quad E \ge E_F^0
+  \end{array}
+\right.
+$$
+
+在热力学绝对零度，能量低于 $E_F^0$ 的所有状态全部被电子所占据，高者都没有电子
+$$ N = \int\mathrm{d}N = \int_0^{E_F^0}g(E)\mathrm{d}E $$
+求得 
+$$ E_F^0 = \frac{\hbar^2}{2m}(3\pi^2\frac{N}{V_c})^{2\over{3}} $$
+每个电子的平均能量
+$$ \bar{E} = \frac{1}{N}\int{E\mathrm{d}N} = \frac{3}{5} {E_F^0} $$
+仍然很高。这是因为电子要遵从泡利原理，在绝对零度不可能所有的电子都填在最低能态，因而平均动能不为零。
+
+##### $T > 0\mathrm{K}$ 时
+自由电子气体的状态为热激发态。
+当温度从绝对零度开始升高，电子按能量的分布将发生变化，但电子能量的任何改变必须由晶体的热能来提供。由于热能的量级 $k_BT$ 比电子能量要小得多，又要考虑泡利不相容原理，以致在通常的温度下，电子按能量的分布只能产生非常小的改变。
+
+当 $E = E_F$ 时，$f(E,T) = 1/2$
+
+自由系统总电子数
+$$
+N = \int_0^\infty{f_{F-D}(E,T)g(E)\mathrm{d}E}
+$$
+解得
+$$
+E_F \approx E_F^0\left[1-\frac{\pi^2}{12}
+\left(\frac{k_BT}{E_F^0}\right)^2
+\right]
+$$
+$E_F$ 略小于 $E_F^0$.
+
+#### 费米面
+> 费米面：电子能量等于费米能的等能面
+
+* 费米半径 $\displaystyle k_F^0 = \left(3\pi^2\frac{N}{V}\right)^{\frac{1}{3}}$
+* 费米动量（费米面上电子的动量） $p_F^0 = \hbar k_F^0$
+* 费米速度 $v_F^0 = \hbar k_F^0 / m$
+* 费米温度 $T_F^0 = E_F^0 / k_B$
+
+#### 💊索末非自由电子气模型
+
+基本假设：
+1. 独立电子近似
+2. 自由电子近似
+3. 弹性碰撞近似
+4. 电子是费米子，电子气服从费米—狄拉克统计分布
+
+### 热容
+#### 自由电子气
+在温度为 $T$（稍高于绝对零度，远小于费米温度，室温也算） 时，每个电子的平均能量为
+$$
+\bar{E} \approx \frac{3}{5}E_F^0
+\left[1+\frac{5\pi^2}{12}
+\left(\frac{k_BT}{E_F^0}\right)^2
+\right]
+$$
+自由电子气的摩尔热容应该为
+$$
+C_V^e = \left(\frac{\partial U}{\partial T}\right)_V
+= N\frac{\mathrm{d}\bar{E}}{\mathrm{d}T}
+= N\frac{\pi^2k_B}{2}\left(\frac{T}{T_F^0}\right)
+= \gamma T
+$$
+其中 $\gamma = \frac{\pi^2k_B^2}{3}g(E_F^0)$ 为电子气的热容系数（索末非系数）。
+
+由于只有费米面附近约 $k_BT$ 范围内的电子参与热激发，对比热有贡献，只是全部电子中极小的一部分，从而解决了经典理论对比热估计过高的困难。
+
+#### 金属
+金属的热容包括晶格振动（声子气）的贡献和自由电子气的贡献：
+$$C = C_V^e + C_V^L$$
+
+##### 高温（$T \gg \Theta_D$）
+$$C_V = 3R + \gamma T$$
+$$\frac{C_V^e}{C_V^l} = \frac{k_BT}{E_F^0} \sim 10^{-2}$$
+
+##### 低温（$T \ll \Theta_D$）
+
+$$C_V = \gamma T + b T^3$$
+电子气热容随温度下降的变化比晶格热容的变化要缓慢得多，两者的大小变得可以相比。
+
+但不少的金属的 $\gamma$ 的实验值与理论值有差别。原因在于在近自由电子的零级近似中，忽略了电子与电子，电子与晶格之间的相互作用；另外实际金属中的电子并不是在恒定势场中运动，而是在离子实的周期性市场中运动。
+
