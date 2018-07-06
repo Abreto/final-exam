@@ -558,6 +558,6 @@ T → 0时，比热 随温度的下降速度比实验数据 T3快，与实验曲
 利用德拜模型求声子数，积分上限为 $k_BT/\hbar$（已被激发的声子的频率）
 
 $$ \mathrm{d}N' = f_{BE}(\omega) \cdot g(\omega) \cdot \mathrm{d}\omega $$
-$$ f_{BE}(\omega) = \bar{n}(\omega, T) $$
+$$ f_{BE}(\omega) = \bar{n}(\omega, T) = \frac{1}{\displaystyle\exp{\left(\frac{\hbar\omega}{k_BT}\right)}-1} $$
 
 ## 第四章 固态电子论基础
