@@ -342,6 +342,23 @@ $$
 可取值数目为：
 $$ \frac{\Omega^*}{\Omega^*/N} = N $$
 密度为
-$$ \frac{N}{\Omega^*} = \frac{V}{(2\pi)^3} $$
+$$ \frac{N}{\Omega^*} = \frac{V}{(2\pi)^3} \qquad \text{三维} $$
+$$ \frac{S}{(2\pi)^2} \qquad \text{二维，总面积} $$
+$$ \frac{L}{2\pi} \qquad \text{一维，总长度} $$
 
 #### 格波态密度函数
+
+> 格波态密度函数 $g(\omega)$（模式密度数）：
+> 确定体积 $V$ 的晶体，在 $\omega$ 附近单位频率间隔内的格波总数。
+
+$$ g(\omega) = \frac{\omega\sim\omega+\mathrm{d}\omega\text{频率间的格波数}}{\mathrm{d}\omega} $$
+
+> 格波数：$q$ 点密度 $\times$ $\omega\sim\omega+\mathrm{d}\omega$ "体积"
+
+$$g(\omega) =
+\sum_{i=1}^{3S}
+{
+  \frac{V}{(2\pi)^3}
+  \int_\omega{\frac{\mathrm{d}S_\omega}{\left|\nabla_q\omega_i(q)\right|}}
+}
+$$
