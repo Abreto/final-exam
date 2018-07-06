@@ -362,3 +362,26 @@ $$g(\omega) =
   \int_\omega{\frac{\mathrm{d}S_\omega}{\left|\nabla_q\omega_i(q)\right|}}
 }
 $$
+
+如果 $\omega(\boldsymbol{q})=\omega(q)$，有每一支格波
+$$ g_i(\omega)\mathrm{d}\omega = {
+  \left\{
+    \begin{array}{lc}
+    \text{一维} & \displaystyle \frac{L}{2\pi} \\ \\
+    \text{二维} & \displaystyle \frac{S}{(2\pi)^2} \\ \\
+    \text{三维} & \displaystyle \frac{V}{(2\pi)^3} \\
+    \end{array}
+  \right\}
+}\mathrm{d}\vec{q} $$
+其中
+$$
+\newcommand\d{\mathrm{d}}
+\mathrm{d}\vec{q} = 
+\left\{
+  \begin{array}{cl}
+  \displaystyle \d(2q) = 2\d{q} & \text{一维} \\ \\
+  \displaystyle \d(\pi{}q^2) = 2\pi{q}\d{q} & \text{二维} \\ \\
+  \displaystyle \d(\frac{4}{3}\pi{q^3}) = 4\pi{q^2}\d{q} & \text{三维}
+  \end{array}
+\right.
+$$
