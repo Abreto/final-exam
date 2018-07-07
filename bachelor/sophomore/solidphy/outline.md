@@ -743,3 +743,126 @@ $$C_V = \gamma T + b T^3$$
 但不少的金属的 $\gamma$ 的实验值与理论值有差别。原因在于在近自由电子的零级近似中，忽略了电子与电子，电子与晶格之间的相互作用；另外实际金属中的电子并不是在恒定势场中运动，而是在离子实的周期性市场中运动。
 
 > 费米面附近的电子状态决定了金属的物理性质
+
+## 第五章 固体能带论
+
+> 每一个能带中，电子的能量与电子波矢有确定的关系，称之为能带结构
+
+基本近似：
+1. 绝热近似：$n$ 个价电子在 $N$ 个固定不动的周期排列的原子实的势场中运动
+2. 单电子近似：任一电子都可视为是处在原子实周期势场和其他$(n-1)$个电子所产生的平均势场中的电子
+3. 周期势场近似：晶体中电子的势能函数具有晶体的周期性，$V(\vec{r}) = V(\vec{r}+\vec{R}_n)$，$\vec{R}_n$ 为正格矢
+
+### 固体中电子的共有化与能带
+
+> 原子之间相互靠近而产生的相互作用使原子能级的简并消除，是固体中出现能带的关键。
+
+* 导体：$V = V_0 + \delta{V}$
+* 绝缘体：$V = V^{at} + \delta{V}$
+
+傅里叶分解：
+$$ V(r) = \sum_{G_n \ne 0}{V_n\cdot\mathrm{e}^{iG_n\cdot{r}}}
+= \text{（一维）}\sum_{n\ne{0}}{V_n\mathrm{e}^{i\frac{2\pi}{a}nx}} $$
+其中
+$$
+V_n =
+\frac{1}{\Omega}\int_\Omega{V(r)\mathrm{e}^{-iG_n\cdot{r}}}\mathrm{d}r
+= \text{（一维）}\frac{1}{a}\int_0^a{V(x)\mathrm{e}^{-i\frac{2\pi}{a}nx}}\mathrm{d}x
+$$
+$a$ 为晶格常数
+
+能带内能级分布是准连续的
+
+* 能级和能带一一对应
+* 能带交叠
+* 先交叠再分裂
+
+### 布洛赫（Bloch）定理
+在上述三个近似之下，
+求解晶体中电子运动本征态的问题简化为解周期场中单电子薛定谔方程：
+$$
+\left[-\frac{\hbar^2}{2m}\nabla^2 + V(\boldsymbol{r})\right]\psi(\boldsymbol{k},\boldsymbol{r})
+=
+E\psi(\boldsymbol{k}, \boldsymbol{r})
+$$
+
+#### Bloch 定理
+> 晶体中的电子波函数是按照晶格周期性进行的调幅平面波。
+> 即在周期势场中，薛定谔方程的解具有如下形式：
+> $$ \psi(\boldsymbol{k},\boldsymbol{r}) = U(\boldsymbol{k}, \boldsymbol{r})\mathrm{e}^{i\boldsymbol{k}\cdot\boldsymbol{r}} $$
+> 其中，$U$ 与势场具有相同的周期性：
+> $$ U(\boldsymbol{k}, \boldsymbol{r}) = U(\boldsymbol{k}, \boldsymbol{r}+\boldsymbol{R}_n) $$
+> 晶体中电子的状态满足布洛赫定理，晶体中的电子波称为布洛赫波，晶体中电子称为布洛赫电子。
+
+1. 电子出现的几率具有正晶格的周期性：$|\psi(\boldsymbol{k},\boldsymbol{r})|^2=|\psi(\boldsymbol{k},\boldsymbol{r}+\boldsymbol{R}_n)|^2$
+2. （等价表述）在布洛赫函数中，将坐标平移一个正格矢的效果等于乘上一个相位因子：<br />$\psi(\boldsymbol{k},\boldsymbol{r}+\boldsymbol{R}_n) = \psi(\boldsymbol{k},\boldsymbol{r})\mathrm{e}^{i\boldsymbol{k}\cdot\boldsymbol{R}_n}$
+3. 波函数本身并不一定具有正晶格的周期性，波矢 $\boldsymbol{k}$ 不一定是倒格矢（若考虑玻恩—卡曼边界条件，则 $\boldsymbol{k}$ 为倒格矢且均匀分布）
+
+周期势场中的电子的波函数是自由电子的平面波 $\mathrm{e}^{ik\cdot{r}}$ 被周期函数 $u(k,r)$ 所调制，即调幅平面波。
+
+##### 推论
+1. $\boldsymbol{k}$ 态和 $\boldsymbol{k}+\boldsymbol{G}_h$ 态是相同的状态：
+$$\psi(k+G_h,r)=\psi(k,r)$$
+$$E(k+G_h) = E(k)$$
+2. 在倒空间选取合适的坐标系：
+$$E(\vec{k}) = E(-\vec{k})$$
+3. 电子的能量状态 $E$ 具有与正晶格相同的对称性
+
+#### 近自由电子模型
+近自由电子模型讨论的对象是金属中的价电子。
+原子实形成的周期性势场较弱，电子近似认为是自由电子，在薛定谔方程中取平均势$V_0$作为周期势$V(x)$的零级近似，而将$V(x)$的起伏部分当做微扰。
+
+##### 能量与波函数
+
+$$\psi^{(0)}(k,x) = L_c^{-\frac{1}{2}}\mathrm{e}^{ik\cdot{x}}$$
+$$ E^{(0)}(k) = \frac{\hbar^2k^2}{2m} $$
+布里渊区边界处
+$$
+E_k = E_k^{(0)} \pm |V_h|
+$$
+
+##### 波矢远离布区边界
+$k'$ 也远离布区，为非简并情况。能量的修正项较小，近似认为是自由电子
+$$E_k \approx = \frac{\hbar^2k^2}{2m}$$
+
+##### 波矢接近布区边界
+$k \to \frac{\pi}{a}$, $k' \to -\frac{\pi}{a}$，简并情况。
+$$ E_{\pm} \approx T_h + |V_h| \pm o() $$
+
+##### 在布区边界
+$$ E_{\pm}(k) = E^{(0)}(k) \pm |V_n| $$
+禁带宽度 $\Delta{E}_g = 2|V_n|$
+
+![能带示意图](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/nd.png)
+![色散关系图](https://abreto.github.io/final-exam/bachelor/sophomore/solidphy/ssgx.png)
+
+因为N是很大的，因此K的取值以及相应的能级都是十分密集的，即准连续。这些准连续的能级被禁带隔开而形成一系列能带，每个能带所对应的k的取值范围都是2π/a，即一个倒易原胞的长度，而所包含的量子态数目又都是N，即等于晶体中原胞的数目。
+
+属于同一个布里渊区的能级构成一个能带，不同的布里渊区对应于不同的能带，每个布里渊区体积相同，等于倒格子原胞的体积，每个能带的量子态数目：2N（计入自旋）。
+
+#### 紧束缚模型
+对绝缘体，其电子被紧紧地束缚在原子核周围。当原子之间相距很远时，电子被紧密束缚在原子的周围，其状态可用自由原子的波函数来描述。
+
+在紧束缚近似下，
+仅考虑最近邻原子间的波函数的交叠所得到的晶体的 $s$ 能带关系
+$$
+E_s(\boldsymbol{k})
+ =
+E_s^{at} - A - B
+\sum_{\boldsymbol{R}_n \ne 0}^{\text{最近邻}}
+\mathrm{e}^{
+  i\boldsymbol{k}\cdot\boldsymbol{R}_n
+}
+$$
+
+适用于绝缘体，相邻原子的电子波函数交替较少的半导体、金属的内层电子和过渡金属的 $d$ 电子。
+
+能带宽度 $= E_{smax} - E_{smin}$
+
+在紧束缚近似中，把能带同原子的能级联系起来，原子的不同能级在晶体中变成相应的能带，如S带，p带，d带等。外层电子的波函数交叠程度大将形成较宽的能带，而内层电子相应的能带比较窄。
+原子可能有能量相等或相近的原子轨道，可能出现能带互相重叠的情况，这时能带与原子能级之间就没有简单的对应关系了。
+
+### 电子的准经典运动
+
+## 第六章 晶体中的缺陷
+
