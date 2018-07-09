@@ -1,0 +1,75 @@
+# 考研学业英语
+
+## Vocabulary
+
+- commencement ; take-off
+- calligraphy ; handwriting
+- relented ; softened
+- naive ; credulous
+- intuition ; sense
+- subtle ; delicate
+- destiny ; fate
+- devastating ; destructive
+- external ; outside
+- dogma ; doctrines
+- daunt ; discourage
+- waver ; heistate
+- uproot ; exterminate
+- corollary ; consequence
+- sputter ; sound
+- splashed ; flapped
+- exotic ; strange
+- kick ; blame
+- sophisticated ; experienced
+- terrific ; great
+- query ; question
+- slack ; loose
+- nasty ; malicious
+- complacent ; scornful
+- make-over ; change
+- Postsecondary ; Higher
+- credentials ; cerfificates
+- downsize ; cut short
+- brutish ; brutal
+- sensation ; excitement
+- demise ; termination
+- viable ; practicable
+- allay ; ease
+- cripple ; damage
+- stifle ; repress
+- malicious ; harsh
+- reigned ; dominated
+- abhorrent ; distasteful
+- miniature ; small
+- tantalizing ; tempting
+- inextricable ; aomplicated
+- sublime ; magnificent
+- adherents ; supporters
+- authentic ; reliable
+- immersed ; dipped
+- transcend ; surpass
+- disaffected ; resentful
+- bust ; depression
+- taxing ; hard
+- stifled ; prohibited
+- elegant ; refined
+- intrepid ; fearless
+- perpetually ; for good
+- superbly ; marvelously
+- fragile ; weak
+- churlish ; ill-natured
+- bleak ; dim
+- bitches ; complains
+- agitate ; push
+- sullenly ; reluctantly
+- quell ; crush
+- affiliation ; association
+- patriotic ; nationalistic
+- mobilization ; calling up
+- destitute ; poor
+- lyrics ; words
+- censorship ; control
+- off the air ; not broadcasted
+- injunction ; order
+- idol ; hero
+- (waiting for lesson 9)
